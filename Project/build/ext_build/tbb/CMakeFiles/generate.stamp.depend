@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/CMakeFiles/3.17.1/CMakeASM_MASMCompiler.cmake
+D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/tbb/CMakeLists.txt
+D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/tbb/build/version_string.ver.in
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeASMInformation.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeASM_MASMInformation.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CheckCXXCompilerFlag.cmake

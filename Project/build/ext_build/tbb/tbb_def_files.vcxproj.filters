@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\win64-tbb-export.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbbmalloc\win64-tbbmalloc-export.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\15fd283890ec5ab381dc80aa3d009cb3\tbb_def_files.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb\CMakeFiles\tbb_def_files" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0CAA1F1C-C202-3A9D-8D26-3D3EDB6336BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DB9F96E5-AD79-3843-BA2F-613CF869C2F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

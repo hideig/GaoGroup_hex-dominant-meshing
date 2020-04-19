@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{100E8A95-D2CA-38FE-9FF2-9BFBEA6CB304}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glad\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glad\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glad\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glad\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXSourceRuns.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXSourceRuns.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXSourceRuns.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXSourceCompiles.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXSourceRuns.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ZERO_CHECK.vcxproj">
+      <Project>{BC34D81F-68F4-3783-A225-CB79E0661B00}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\bin2c.vcxproj">
+      <Project>{CB532D5F-4B7D-3802-998C-AA907B55B8EB}</Project>
+      <Name>bin2c</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\ext_build\glfw\src\glfw.vcxproj">
+      <Project>{58BA0F71-E7EE-34D4-A526-C8DFC12871C1}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\ext_build\glfw\src\glfw_objects.vcxproj">
+      <Project>{067BA516-3376-37F6-8FF8-DAC2B1A567F5}</Project>
+      <Name>glfw_objects</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\nanogui.vcxproj">
+      <Project>{331B4801-3709-307B-B683-C3F44CF366A7}</Project>
+      <Name>nanogui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\nanogui-obj.vcxproj">
+      <Project>{45116AF2-7D97-3A99-99EC-7414BFC72C0A}</Project>
+      <Name>nanogui-obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

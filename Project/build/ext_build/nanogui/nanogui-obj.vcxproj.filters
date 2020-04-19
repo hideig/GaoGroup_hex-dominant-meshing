@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src\nanovg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glad\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\nanogui_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\glutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\theme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\layout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\popup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\checkbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\popupbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\combobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\progressbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\messagedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\textbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\imagepanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\imageview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\vscrollpanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\colorwheel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\colorpicker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\stackedwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\tabheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\tabwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\glcanvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\src\serializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glad\include\glad\glad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glad\include\KHR\khrplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\glutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\theme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\layout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\label.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\popup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\checkbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\popupbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\combobox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\progressbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\slider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\messagedialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\textbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\imagepanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\imageview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\vscrollpanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\colorwheel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\colorpicker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\stackedwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\tabheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\tabwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\glcanvas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\formhelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\toolbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\opengl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\nanogui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\serializer\core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\serializer\opengl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include\nanogui\serializer\sparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\44ec7b59b468d28ff918225c0b1d7e02\nanogui_resources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0CAA1F1C-C202-3A9D-8D26-3D3EDB6336BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{178AAF46-8BB8-3E71-8DA8-8469BC034E12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DB9F96E5-AD79-3843-BA2F-613CF869C2F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

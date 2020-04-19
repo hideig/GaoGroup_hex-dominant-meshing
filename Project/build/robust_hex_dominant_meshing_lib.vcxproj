@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8C1E4E16-6021-3325-8ED2-84E08ED3EEF3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>robust_hex_dominant_meshing_lib</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">robust_hex_dominant_meshing_lib.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">robust_hex_dominant_meshing_lib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">robust_hex_dominant_meshing_lib.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">robust_hex_dominant_meshing_lib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">robust_hex_dominant_meshing_lib.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">robust_hex_dominant_meshing_lib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">robust_hex_dominant_meshing_lib.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">robust_hex_dominant_meshing_lib</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;SINGLE_PRECISION;TETLIBRARY;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\eigen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glfw\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\glew\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\ext\nanovg\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\nanoguig\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\pcg32;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tetgen;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\d96049831ae1609a2a1b06ded170cb43\im_resources.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running bin2c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+ext_build\nanogui\Debug\bin2c.exe im_resources.cpp im_resources.h D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/loadmesh.png D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_curve.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_position_field.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_sheet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_curve.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_position_field.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_sheet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_tet.geo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\Debug\bin2c.exe;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\loadmesh.png;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_curve.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_position_field.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_sheet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_curve.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_position_field.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_sheet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_tet.geo;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\im_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running bin2c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+ext_build\nanogui\Release\bin2c.exe im_resources.cpp im_resources.h D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/loadmesh.png D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_curve.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_position_field.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_sheet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_curve.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_position_field.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_sheet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_tet.geo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\Release\bin2c.exe;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\loadmesh.png;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_curve.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_position_field.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_sheet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_curve.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_position_field.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_sheet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_tet.geo;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\im_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running bin2c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+ext_build\nanogui\MinSizeRel\bin2c.exe im_resources.cpp im_resources.h D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/loadmesh.png D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_curve.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_position_field.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_sheet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_curve.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_position_field.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_sheet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_tet.geo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\MinSizeRel\bin2c.exe;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\loadmesh.png;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_curve.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_position_field.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_sheet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_curve.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_position_field.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_sheet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_tet.geo;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\im_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running bin2c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+ext_build\nanogui\RelWithDebInfo\bin2c.exe im_resources.cpp im_resources.h D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/loadmesh.png D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_curve.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_position_field.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_sheet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tet.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.frag D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_curve.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_position_field.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_sheet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_tet.vert D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_mesh.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tet.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_tri.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_orientation_field_v.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_singularity_tri.geo D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/resources/shader_tet.geo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\RelWithDebInfo\bin2c.exe;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\loadmesh.png;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_curve.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_position_field.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_sheet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tet.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.frag;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_curve.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_position_field.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_sheet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_tet.vert;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_mesh.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tet.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_tri.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_orientation_field_v.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_singularity_tri.geo;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\resources\shader_tet.geo;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\im_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeSystem.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeSystem.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeSystem.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeCCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeCXXCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeRCCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeSystem.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeRCInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\Windows.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\meshio.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\meshio.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\viewer.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\viewer.h" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\aabb.h" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\adjacency.h" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\batch.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\batch.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\bvh.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\bvh.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\common.h" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\dedge.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\dedge.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\lock.h" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\quat.h" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\subdivide.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\subdivide.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\timer.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\hierarchy.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\hierarchy.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\orient_triangle_mesh.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\orient_triangle_mesh.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\orientations.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\orientations.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\positions.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\positions.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\optimizer.cpp" />
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\optimizer.h" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\extract.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\extract3D.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply\rply.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\im_resources.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ZERO_CHECK.vcxproj">
+      <Project>{BC34D81F-68F4-3783-A225-CB79E0661B00}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\nanogui\bin2c.vcxproj">
+      <Project>{CB532D5F-4B7D-3802-998C-AA907B55B8EB}</Project>
+      <Name>bin2c</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

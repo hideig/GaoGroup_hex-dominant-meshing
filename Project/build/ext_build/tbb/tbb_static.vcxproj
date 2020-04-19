@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39254E4A-319D-33FF-A9C2-451E07CFE78B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>tbb_static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tbb_static.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tbb_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tbb_static.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tbb_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tbb_static.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tbb_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tbb_static.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tbb_static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /volatile:iso</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4800;4146;4244;4577;4018</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /volatile:iso</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4267;4800;4146;4244;4577;4018</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /volatile:iso</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4267;4800;4146;4244;4577;4018</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /volatile:iso</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4800;4146;4244;4577;4018</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0600;USE_WINTHREAD;WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_BUILD=1;__TBB_NO_IMPLICIT_LINKAGE=1;DO_ITT_NOTIFY;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\include;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/tbb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/ext_build/tbb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeASM_MASMCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\build\version_string.ver.in;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeASMInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeASM_MASMInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/tbb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/ext_build/tbb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeASM_MASMCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\build\version_string.ver.in;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeASMInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeASM_MASMInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/tbb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/ext_build/tbb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeASM_MASMCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\build\version_string.ver.in;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeASMInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeASM_MASMInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/tbb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\bin\cmake.exe -SD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project -BD:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build --check-stamp-file D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/build/ext_build/tbb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\3.17.1\CMakeASM_MASMCompiler.cmake;D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\build\version_string.ver.in;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeASMInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CMakeASM_MASMInformation.cmake;D:\Jack\Workspace\Cmake\cmake-3.17.1-win64-x64\share\cmake-3.17\Modules\CheckCXXCompilerFlag.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ext_build\tbb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\old\concurrent_queue_v2.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\old\concurrent_vector_v2.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\old\spin_rw_mutex_v2.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\old\task_v2.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\arena.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\cache_aligned_allocator.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\concurrent_hash_map.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\concurrent_monitor.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\concurrent_queue.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\concurrent_vector.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\condition_variable.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\critical_section.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\dynamic_link.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\governor.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\itt_notify.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\market.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\mutex.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\observer_proxy.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\pipeline.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\private_server.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\queuing_mutex.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\queuing_rw_mutex.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\reader_writer_lock.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\recursive_mutex.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\scheduler.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4458;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4458;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4458;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4458;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\semaphore.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\spin_mutex.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\spin_rw_mutex.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\task.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\task_group_context.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\tbb_main.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\tbb_misc.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\tbb_misc_ex.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\tbb_statistics.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\tbb_thread.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\x86_rtm_rw_mutex.cpp" />
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\rml\client\rml_tbb.cpp" />
+    <MASM Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\intel64-masm\atomic_support.asm" />
+    <MASM Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\intel64-masm\itsx.asm" />
+    <MASM Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\tbb\src\tbb\intel64-masm\intel64_misc.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\ZERO_CHECK.vcxproj">
+      <Project>{BC34D81F-68F4-3783-A225-CB79E0661B00}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

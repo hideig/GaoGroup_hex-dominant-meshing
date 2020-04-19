@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/ext/glfw/CMake/modules/FindVulkan.cmake
+D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/ext/glfw/CMakeLists.txt
+D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/ext/glfw/src/glfw3.pc.in
+D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/ext/glfw/src/glfw3Config.cmake.in
+D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/ext/glfw/src/glfw_config.h.in
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakePackageConfigHelpers.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CheckCSourceCompiles.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CheckIncludeFile.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CheckLibraryExists.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/FindPackageMessage.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/FindThreads.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/WriteBasicConfigVersionFile.cmake

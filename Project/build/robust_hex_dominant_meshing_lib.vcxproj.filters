@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\meshio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\batch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\bvh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\dedge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\subdivide.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\hierarchy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\orient_triangle_mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\orientations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\positions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\optimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\extract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\extract3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\ext\rply\rply.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\im_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\meshio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\viewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\aabb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\adjacency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\batch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\bvh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\dedge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\lock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\quat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\subdivide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\hierarchy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\orient_triangle_mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\orientations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\positions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\src\optimizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\build\CMakeFiles\d96049831ae1609a2a1b06ded170cb43\im_resources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Jack\Workspace\CAD\GaoGroup_hex-dominant-meshing\Project\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0CAA1F1C-C202-3A9D-8D26-3D3EDB6336BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{178AAF46-8BB8-3E71-8DA8-8469BC034E12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DB9F96E5-AD79-3843-BA2F-613CF869C2F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

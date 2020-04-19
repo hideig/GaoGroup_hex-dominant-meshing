@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/Jack/Workspace/CAD/GaoGroup_hex-dominant-meshing/Project/ext/nanoguig/CMakeLists.txt
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CheckCXXCompilerFlag.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CheckCXXSourceCompiles.cmake
+D:/Jack/Workspace/Cmake/cmake-3.17.1-win64-x64/share/cmake-3.17/Modules/CheckCXXSourceRuns.cmake
